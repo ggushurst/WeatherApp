@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(47,150,163), rgb(48, 62, 143));
+    font-family: sans-serif;
+    color:white;
+}
+
+.current-location,
+.current-temperature {
+    height: 10vh;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.current-temperature-degree-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.current-temperature-degree-section span {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.current-temperature-degree-section h2 {
+    font-size: 40px;
+}
+
+.future-temperatures {
+    height: 30vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.future-Temperature-description-day0 > *,
+.future-Temperature-description-day1 > *,
+.future-Temperature-description-day2 > *,
+.future-Temperature-description-day3 > *,
+.future-Temperature-description-day4 > *,
+.future-Temperature-description-day5 > *,
+.future-Temperature-description-day6 > *,
+.future-Temperature-description-day7 > *{
+    margin: 15px 0;
+    height: auto;
+    max-height: 5cm;
+    width: auto;
+    max-width: 10vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    vertical-align: top;
+}

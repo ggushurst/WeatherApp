@@ -1,0 +1,19 @@
+{
+  "name": "create-desktop-window-electron-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron --disable-gpu ."
+  },
+  "author": "Greg",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^7.1.9",
+    "electron-prebuilt": "^1.4.13"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "electron-version": "^2.0.1"
+  }
+}

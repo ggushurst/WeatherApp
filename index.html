@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="UTF-T" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Weather</title>
+    </head>
+    <body>
+        <div class="current-location">
+            <h1 class="current-location-timezone">Timezone</h1>
+        </div>
+        <div class="current-temperature">
+            <div class="current-temperature-degree-section">
+                <h2 class="current-temperature-degree">34</h2>
+                <span>F</span>
+            </div>
+            <div class="current-temperature-description">
+                <canvas class="icon" width="128" height="128"></canvas>
+                <h3>It's friggin cold</h3>
+            </div>
+        </div>
+
+        <div class="future-temperatures">
+            <div class="future-temperature-description-day0">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>
+            </div>
+            <div class="future-temperature-description-day1">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>
+            </div>
+            <div class="future-temperature-description-day2">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>
+            </div>
+            <div class="future-temperature-description-day3">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>            
+            </div>
+            <div class="future-temperature-description-day4">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>            
+            </div>
+            <div class="future-temperature-description-day5">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>            
+            </div>
+            <div class="future-temperature-description-day6">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>            
+            </div>
+            <div class="future-temperature-description-day7">
+                <div class="day-of-the-week">dayName</div>
+                <canvas class="icon" width="128" height="128"></canvas>
+                <div class="future-temp-description">
+                    <h3>temp</h3>
+                </div>            
+            </div>
+        </div>
+        <!-- <script>
+            const weatherData  = require('./app.js')
+            weatherData.getWeatherData
+        </script> -->
+        <script>
+            console.log("Testing testGeo");
+            if (navigator.geolocation){
+                console.log("testing getCurrentPosition");
+                navigator.geolocation.getCurrentPosition( (position) =>
+                    console.log(position),
+                    (err) => console.log(err),
+                    {enableHighAccuracy:true,
+                    timeout:5000}
+                );
+            }
+        </script>
+        <script src="skycons.js"></script>
+
+
+    </body>
+</html>
