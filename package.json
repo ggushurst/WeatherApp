@@ -13,7 +13,7 @@
     "electron-prebuilt": "^1.4.13"
   },
   "dependencies": {
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "electron-version": "^2.0.1"
   }
 }
