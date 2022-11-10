@@ -9,7 +9,7 @@
   "author": "Greg",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^7.1.9",
+    "electron": "^18.3.7",
     "electron-prebuilt": "^1.4.13"
   },
   "dependencies": {
